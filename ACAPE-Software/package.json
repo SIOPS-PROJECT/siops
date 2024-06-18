@@ -1,0 +1,22 @@
+{
+  "name": "acape-software",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "siops-admin",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.7.2",
+    "crypto-js": "^4.2.0",
+    "electron": "^31.0.1",
+    "electron-builder": "^24.13.3",
+    "express": "^4.19.2",
+    "fortydb": "^0.0.2",
+    "socket.io": "^4.7.5",
+    "uuid": "^9.0.1"
+  },
+  "description": ""
+}
