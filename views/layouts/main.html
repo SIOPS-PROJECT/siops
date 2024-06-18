@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>ACAPE Software</title>
+	<link rel="stylesheet" type="text/css" href="./../scripts/animate.css">
+	<link rel="stylesheet" type="text/css" href="./../scripts/bootstrap.css">
+	<link rel="stylesheet" href="./../scripts/contextmenu.css">
+	<link rel="stylesheet" type="text/css" href="./../scripts/style.css">
+</head>
+<body>
+
+	<div class="menu"></div>
+	<div class="app"></div>
+	<div class="hoja-factura"></div>
+
+	<div class="alerter"></div>
+
+	<nav class="navbar navbar-expand-lg bt-1 set-navbar-app">
+  	<div class="container-lg">
+  		<!-- <img src="/favicon.ico" alt="Bootstrap" width="30" height="24"> -->
+	    <a class="navbar-brand" href="#">SIOPS</a>
+	    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+	      <span class="navbar-toggler-icon"></span>
+	    </button>
+	    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+	      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+	        <li class="nav-item">
+	          <a class="nav-link {{{active_principal}}}" aria-current="page" href="/"><i class="fa-solid fa-home"></i> Inicio</a>
+	        </li>
+	        <li class="nav-item dropdown">
+	          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+	            <i class="fa-solid fa-check-to-slot"></i> Productos
+	          </a>
+	          <ul class="dropdown-menu">
+	            <li><a class="dropdown-item" href="#"><i class="fa-solid fa-a"></i> ACAPE Software</a></li>
+	            <li><hr class="dropdown-divider"></li>
+	            <li><a class="dropdown-item" href="#"><i class="fa-solid fa-globe"></i> Servicios en la nube</a></li>
+	            <li><a class="dropdown-item" href="#"><i class="fa-solid fa-microchip"></i> Servicio Tecnico</a></li>
+	            <li><a class="dropdown-item" href="#"><i class="fa-solid fa-blog"></i> Aplicación o sitio web personalizado</a></li>
+	          </ul>
+	        </li>
+	        <li class="nav-item">
+	        	<a href="/about" class="nav-link"><i class="fa-solid fa-address-card"></i> Sobre Nosotros</a>
+	        </li>
+	        <li class="nav-item">
+	          <a class="nav-link disabled" aria-disabled="true"></a>
+	        </li>
+	      </ul>
+	      <form class="d-flex">
+	        <button class="btn btn-outline-success" type="submit">Lanzar Aplicación</button>
+	      </form>
+	    </div>
+	  </div>
+	</nav>
+	<br><br><br><br><br>
+
+	<div class="body">{{{body}}}</div>
+	<br>
+	<form action="" class="ball-1 container">
+		<div class="ball-padding">
+			<h4 class="text-center">¡Envianos un mensaje!</h4>
+			<p class="text-center">Si estas interesado en alguno de nuestros servicios envianos un mensaje a travéz de nuestra plataforma o nuestras redes sociales.</p>
+			<label for="">Nombre:</label>
+			<input type="text" class="form-control" placeholder="Ejem: Jhon Alexander">
+			<label>Mensaje: </label>
+			<textarea class="form-control" placeholder="¡Me interesa uno de tus productos!"></textarea>
+			<br>
+			<button class="btn btn-outline-primary btn-block d-block w-100"><i class="fa-solid fa-envelope"></i> Enviar Mensaje</button>
+			<br>
+		</div>
+	</form>
+	<br>
+
+	<footer>
+		<div class="footer-group">
+			<div class="contactus">
+				<h4>Contacto</h4>
+				<p><i class="fa-solid fa-phone"></i> +57 3115203662</p>
+				<p><i class="fa-brands fa-whatsapp"></i> +57 3115203662</p>
+				<p><i class="fa-solid fa-envelope"></i> soporte.siops@gmail.com - Correo De Soporte</p>
+				<p><i class="fa-solid fa-envelope"></i> brayanjguzmanm@gmail.com - Correo Personal</p>
+			</div>
+			<div class="links-footer">
+				<h4>Enlaces</h4>
+				<div class="p-2">
+					<a href="/"><i class="fa-solid fa-home"></i> Inicio</a>
+					<br>
+					<a href="/products"><i class="fa-solid fa-check-to-slot"></i> Productos</a>
+					<br>
+					<a href="/about"><i class="fa-solid fa-address-card"></i> Sobre Nosotros</a>
+				</div>
+			</div>
+		</div>
+		<div class="footer-botom">
+			<p>&copy; 2024 SIOPS. Todos los derechos reservados.</p>
+		</div>
+	</footer>
+
+	<script src="/socket.io/socket.io.js"></script>
+	<script src="/scripts/icons/js/all.js"></script>
+	<script src="/scripts/jquery.js"></script>
+	<script src="/scripts/contextmenu.js"></script>
+	<script src="/APIS/popup.js"></script>
+	<script src="/scripts/timems.js"></script>
+	<script src="/scripts/numbers.js"></script>
+	<script src="/scripts/axios.js"></script>
+	<script src="/APIS/SIOPS-router.js"></script>
+	<script src="/scripts/bootstrap.js"></script>
+	<script src="/scripts/alerts.js"></script>
+	<script src="/scripts/pdf.js"></script>
+	<script src="/scripts/scrollreveal.js"></script>
+	<script src="/scripts/chart.js"></script>
+	<!-- <script src="./../scripts/main.js"></script>
+	<script src="./../scripts/main2.js"></script> -->
+	{{{scripts_body}}}
+</body>
+</html>
